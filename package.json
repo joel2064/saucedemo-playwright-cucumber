@@ -1,0 +1,33 @@
+{
+  "name": "saucedemo-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "Suite de automatización E2E para Sauce Demo con Playwright + Cucumber (TypeScript) y patrón Page Object Model",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "cross-env NODE_NO_WARNINGS=1 cucumber-js",
+    "test:headed": "cross-env NODE_NO_WARNINGS=1 HEADLESS=false cucumber-js",
+    "test:smoke": "cross-env NODE_NO_WARNINGS=1 cucumber-js --tags @smoke",
+    "test:invalid": "cross-env NODE_NO_WARNINGS=1 cucumber-js --tags @sadPath",
+    "test:valid": "cross-env NODE_NO_WARNINGS=1 cucumber-js --tags @happyPath",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "typescript",
+    "bdd",
+    "gherkin",
+    "page-object-model",
+    "saucedemo"
+  ],
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.10.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.0"
+  }
+}

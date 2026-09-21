@@ -9,7 +9,7 @@ module.exports = {
     parallel: 2,
     // Reportes: consola + HTML + JSON (el JSON permite enganchar reportes externos)
     format: [
-      'progress-bar',
+      'progress',
       'html:reports/cucumber-report.html',
       'json:reports/cucumber-report.json',
       'summary',
